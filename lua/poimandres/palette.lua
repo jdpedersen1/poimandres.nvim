@@ -1,17 +1,17 @@
 --- palette variants
 local variants = {
   main = { -- main palette
-    yellow = '#FFFAC2',
-    teal1 = '#5DE4C7',
-    teal2 = '#5FB3A1',
+    yellow = '#876253',
+    teal1 = '#008080',
+    teal2 = '#008080',
     teal3 = '#42675A',
     blue1 = '#89DDFF',
     blue2 = '#ADD7FF',
     blue3 = '#91B4D5',
     blue4 = '#7390AA',
-    pink1 = '#FAE4FC',
-    pink2 = '#FCC5E9',
-    pink3 = '#D0679D',
+    pink1 = '#c8434a',
+    pink2 = '#c03232',
+    pink3 = '#a52b2b',
     blueGray1 = '#A6ACCD',
     blueGray2 = '#767C9D',
     blueGray3 = '#506477',
