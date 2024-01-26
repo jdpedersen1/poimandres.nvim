@@ -1,6 +1,7 @@
 --- palette variants
 local variants = {
   main = { -- main palette
+    copper = '#876253',
     yellow = '#876253',
     teal1 = '#008080',
     teal2 = '#008080',

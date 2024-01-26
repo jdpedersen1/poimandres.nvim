@@ -41,7 +41,7 @@ function M.get(config)
     FloatTitle = { fg = p.blueGray2 },
     FoldColumn = { fg = p.blueGray2 },
     Folded = { fg = p.text, bg = groups.panel },
-    IncSearch = { fg = p.background3, bg = p.blue2 },
+    IncSearch = { fg = p.background3, bg = p.copper },
     LineNr = { fg = p.blueGray3 },
     MatchParen = { fg = p.background3, bg = p.blueGray3 },
     ModeMsg = { fg = p.blue3 },
@@ -97,13 +97,13 @@ function M.get(config)
     Float = { fg = p.teal1 }, --    a floating point constant: 2.3e10
 
     Identifier = { fg = p.blueGray1 }, -- (preferred) any variable name
-    Function = { fg = p.blue2 }, -- function name (also: methods for classes)
+    Function = { fg = p.copper }, -- function name (also: methods for classes)
 
     Statement = { fg = p.text }, -- (preferred) any statement
     Conditional = { fg = p.blueGray1 }, --  if, then, else, endif, switch, etc.
     Repeat = { fg = p.blue3 }, --   for, do, while, etc.
     Label = { fg = p.text }, --    case, default, etc.
-    Operator = { fg = p.blue2 }, -- "sizeof", "+", "*", etc.
+    Operator = { fg = p.copper }, -- "sizeof", "+", "*", etc.
     Keyword = { fg = p.blue3 }, --  any other keyword
     Exception = { fg = p.blue3 }, --  try, catch, throw
 
@@ -153,10 +153,10 @@ function M.get(config)
     markdownHeadingDelimiter = { fg = p.blue4, style = 'bold' },
     markdownCode = { fg = p.blueGray1 },
     markdownCodeBlock = { fg = p.teal2 },
-    markdownH1 = { fg = p.blue2, style = 'bold' },
-    markdownH2 = { fg = p.blue2, style = 'bold' },
-    markdownH3 = { fg = p.blue2, style = 'bold' },
-    markdownH4 = { fg = p.blue2, style = 'bold' },
+    markdownH1 = { fg = p.copper, style = 'bold' },
+    markdownH2 = { fg = p.copper, style = 'bold' },
+    markdownH3 = { fg = p.copper, style = 'bold' },
+    markdownH4 = { fg = p.copper, style = 'bold' },
     markdownLinkText = { fg = p.blue1, style = 'underline' },
 
     debugPC = { bg = p.background1 }, -- used for highlighting the current line in terminal-debug
@@ -198,8 +198,8 @@ function M.get(config)
     -- TSCharacter = { link = 'Character' },
     ['@comment'] = { link = 'Comment' },
     -- TSConditional = { link = 'Conditional' },
-    ['@variable.builtin'] = { fg = p.blue2 },
-    ['@constant.builtin'] = { fg = p.blue2 },
+    ['@variable.builtin'] = { fg = p.copper },
+    ['@constant.builtin'] = { fg = p.copper },
     ['@constant.falsy'] = { fg = p.pink3 },
     -- TSConstMacro = {},
     -- TSConstant = { fg = p.text },
@@ -209,14 +209,14 @@ function M.get(config)
     -- TSException = {},
     ['field'] = { fg = p.text },
     -- TSFloat = {},
-    ['@function.builtin'] = { fg = p.blue2 },
+    ['@function.builtin'] = { fg = p.copper },
     -- TSFuncMacro = {},
     ['@function'] = { link = 'Function' },
     ['@function.call'] = { fg = p.blueGray1 },
-    TSInclude = { fg = p.blue2 },
+    TSInclude = { fg = p.copper },
     ['@keyword'] = { link = 'Keyword' },
     ['@keyword.return'] = { fg = p.teal2 },
-    ['@keyword.function'] = { fg = p.blue2 },
+    ['@keyword.function'] = { fg = p.copper },
     ['@keyword.operator'] = { fg = p.teal1 },
     ['@label'] = { fg = p.blue3 },
     -- TSLiteral = {},
@@ -227,7 +227,7 @@ function M.get(config)
     ['@operator'] = { link = 'Operator' },
     ['@parameter'] = { fg = p.text },
     -- TSParameterReference = {},
-    ['@property'] = { fg = p.blue2 },
+    ['@property'] = { fg = p.copper },
     ['@punctuation.delimiter'] = { fg = groups.punctuation },
     ['@punctuation.special'] = { fg = groups.punctuation },
     ['@punctuation.bracket'] = { fg = p.text },
@@ -251,13 +251,13 @@ function M.get(config)
     -- tsx
     ['@keyword.export.tsx'] = { fg = p.teal1 },
     ['@keyword.import.tsx'] = { fg = p.teal1 },
-    ['@import.identifier.tsx'] = { fg = p.blue2 },
+    ['@import.identifier.tsx'] = { fg = p.copper },
 
     -- typescript
     ['@keyword.export.typescript'] = { fg = p.teal1 },
     ['@keyword.import.typescript'] = { fg = p.teal1 },
-    ['@import.identifier.typescript'] = { fg = p.blue2 },
-    typescriptVariable = { fg = p.blue2 },
+    ['@import.identifier.typescript'] = { fg = p.copper },
+    typescriptVariable = { fg = p.copper },
     typescriptExport = { fg = p.teal1 },
     typescriptDefault = { fg = p.teal1 },
     typescriptConstraint = { fg = p.teal1 },
@@ -275,18 +275,18 @@ function M.get(config)
 
     -- css
     cssTSFunction = { fg = p.blueGray1 },
-    cssTSProperty = { fg = p.blue2 },
+    cssTSProperty = { fg = p.copper },
     cssTSType = { fg = p.teal1 },
     cssTSKeyword = { fg = p.blueGray1 },
     cssClassName = { fg = p.teal2, style = styles.italic },
     cssPseudoClass = { fg = p.blue3, style = styles.italic },
-    cssDefinition = { fg = p.blue2 },
+    cssDefinition = { fg = p.copper },
     cssTSError = { link = 'cssClassName' },
 
     -- vim.lsp.buf.document_highlight()
-    LspReferenceText = { bg = p.blue2 },
-    LspReferenceRead = { bg = p.blue2 },
-    LspReferenceWrite = { bg = p.blue2 },
+    LspReferenceText = { bg = p.copper },
+    LspReferenceRead = { bg = p.copper },
+    LspReferenceWrite = { bg = p.copper },
 
     -- lsp-highlight-codelens
     LspCodeLens = { fg = p.blueGray1 }, -- virtual text of code lens
@@ -296,7 +296,7 @@ function M.get(config)
     rainbowcol1 = { fg = p.blue1 },
     rainbowcol2 = { fg = p.teal1 },
     rainbowcol3 = { fg = p.yellow },
-    rainbowcol4 = { fg = p.blue2 },
+    rainbowcol4 = { fg = p.copper },
     rainbowcol5 = { fg = p.teal2 },
     rainbowcol6 = { fg = p.pink3 },
     rainbowcol7 = { fg = p.blue3 },
@@ -337,7 +337,7 @@ function M.get(config)
     NvimTreeEmptyFolderName = { fg = p.blueGray3 },
     NvimTreeFileDeleted = { fg = p.pink3 },
     NvimTreeFileDirty = { fg = p.blue4 },
-    NvimTreeFileMerge = { fg = p.blue2 },
+    NvimTreeFileMerge = { fg = p.copper },
     NvimTreeFileNew = { fg = p.teal1 },
     NvimTreeFileRenamed = { fg = p.blueGray3 },
     NvimTreeFileStaged = { fg = p.blue1 },
@@ -381,7 +381,7 @@ function M.get(config)
     CmpItemKind = { fg = p.blue3 },
     CmpItemKindClass = { fg = p.yellow },
     CmpItemKindFunction = { fg = p.blue1 },
-    CmpItemKindInterface = { fg = p.blue2 },
+    CmpItemKindInterface = { fg = p.copper },
     CmpItemKindMethod = { fg = p.pink3 },
     CmpItemKindSnippet = { fg = p.blueGray1 },
     CmpItemKindVariable = { fg = p.teal1 },
@@ -442,8 +442,8 @@ function M.get(config)
     NotifyERRORIcon = { link = 'NotifyERRORBorder' },
 
     -- glepnir/lspsaga.nvim
-    TitleString = { fg = p.blue2 },
-    TitleIcon = { fg = p.blue2 },
+    TitleString = { fg = p.copper },
+    TitleIcon = { fg = p.copper },
     SagaBorder = { bg = p.background2, fg = p.blueGray2 },
     SagaNormal = { bg = p.background2 },
     SagaExpand = { fg = p.teal2 },
@@ -502,7 +502,7 @@ function M.get(config)
     -- shadow
     SagaShadow = { bg = p.background3 },
     -- Outline
-    OutlineIndent = { fg = p.blue2 },
+    OutlineIndent = { fg = p.copper },
     OutlinePreviewBorder = { link = 'SagaNormal' },
     OutlinePreviewNormal = { link = 'SagaBorder' },
     -- Float term
@@ -519,11 +519,11 @@ function M.get(config)
   vim.g.terminal_color_3 = p.yellow -- yellow
   vim.g.terminal_color_11 = p.yellow -- bright yellow
   vim.g.terminal_color_4 = p.blue1 -- blue
-  vim.g.terminal_color_12 = p.blue2 -- bright blue
+  vim.g.terminal_color_12 = p.copper -- bright blue
   vim.g.terminal_color_5 = p.pink2 -- magenta
   vim.g.terminal_color_13 = p.pink2 -- bright magenta
   vim.g.terminal_color_6 = p.blue1 -- cyan
-  vim.g.terminal_color_14 = p.blue2 -- bright cyan
+  vim.g.terminal_color_14 = p.copper -- bright cyan
   vim.g.terminal_color_7 = p.white -- white
   vim.g.terminal_color_15 = p.white -- bright white
 
